@@ -8,7 +8,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <h1>Thymer </h1>
+        <p>Thymer </p>
+        <br/>
         <nav
           style={{
             alignContent: "center",
