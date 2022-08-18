@@ -1,0 +1,45 @@
+export default function Footer() {
+  return (
+    <div className="Footer">
+      <div>
+        <table>
+          <tbody>
+            <tr>
+              <td>
+                <a
+                  className="links"
+                  href="https://frankjs.net"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {<p>Personal</p>}
+                </a>
+              </td>
+              <td>
+                <a
+                  className="links"
+                  href="https://builtbyfrank.com"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {<p>Business</p>}
+                </a>
+              </td>
+              <td>
+                <a
+                  className="links"
+                  href="https://github.com/fjs138"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {<p>Github</p>}
+                </a>
+              </td>
+            </tr>
+            <tr></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  );
+}
