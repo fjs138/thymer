@@ -32,7 +32,6 @@ export default function Timer() {
   return (
     <main style={{ padding: "1rem 0" }}>
       <p className="Timers">
-        {/*<p className="Timers">{timer}</p>Seconds Remaining*/}
         <span> {("0" + Math.floor((timer / 60) % 60)).slice(-2)}</span>
         Minutes
         <br />

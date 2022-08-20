@@ -66,3 +66,49 @@ nav {
 nav a.active {
   background-color: rgba(219, 219, 219, 0.24);
 }
+
+button{
+
+
+  display: inline-block;
+  outline: 0;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 4px;
+  font-size: 13px;
+  height: 30px;
+  background-color: #9147ff;
+  color: white;
+  padding: 0 10px;
+
+
+
+
+
+}
+button:focus-visible{
+   outline-offset: 1px;
+ }
+button:hover {
+  background-color: #772ce8;
+}
+
+input {
+
+  font-size: 13px;
+  border-radius: 4px;
+  padding: 5px 10px;
+  transition: box-shadow 100ms ease-in, border 100ms ease-in, background-color 100ms ease-in;
+  border: 2px solid #dee1e2;
+  color: rgb(14, 14, 16);
+  background: #dee1e2;
+}
+
+input:hover {
+  border-color: #ccc;
+}
+input:focus{
+  border-color: #9147ff;
+  background: #fff;
+}
