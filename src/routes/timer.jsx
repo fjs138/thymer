@@ -8,6 +8,11 @@ export default function Timer() {
     window.clearInterval(id.current);
   };
 
+  document.title =
+      ("0" + Math.floor((timer / 60) % 60)).slice(-2) +
+      ":" +
+      ("0" + Math.floor(timer % 60)).slice(-2);
+
   useEffect(() => {
     if (countdownTimerOn) {
       id.current = window.setInterval(() => {
