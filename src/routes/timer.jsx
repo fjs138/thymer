@@ -1,5 +1,8 @@
 import { useEffect, useRef, useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 export default function Timer() {
+  const notify = () => toast("Countdown complete!");
   const [countdownTimerOn, setCountdownTimerOn] = useState(false);
   const [timer, setTimer] = useState(60);
   const id = useRef(null);
@@ -26,6 +29,8 @@ export default function Timer() {
   useEffect(() => {
     if (timer === 0) {
       clear();
+      notify();
+      setCountdownTimerOn(false);
     }
   }, [timer]);
 
@@ -50,6 +55,7 @@ export default function Timer() {
         min="0"
         max="111599"
       />
+      <ToastContainer position="top-center" />
     </main>
   );
 }
