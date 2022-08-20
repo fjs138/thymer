@@ -9,9 +9,9 @@ export default function Timer() {
   };
 
   document.title =
-      ("0" + Math.floor((timer / 60) % 60)).slice(-2) +
-      ":" +
-      ("0" + Math.floor(timer % 60)).slice(-2);
+    ("0" + Math.floor((timer / 60) % 60)).slice(-2) +
+    ":" +
+    ("0" + Math.floor(timer % 60)).slice(-2);
 
   useEffect(() => {
     if (countdownTimerOn) {
@@ -29,67 +29,28 @@ export default function Timer() {
     }
   }, [timer]);
 
-  // const [timerDays, setTimerDays] = useState(10);
-  // const [timerHours, setTimerHours] = useState(24);
-  // const [timerMinutes, setTimerMinutes] = useState(60);
-  // const [timerSeconds, setTimerSeconds] = useState(60);
-  // const [countdownTime, setCountdownTime] = useState(0);
-
-  // setup end datetime for timer
-  // const countdownTotal =
-  //   1000 * timerSeconds * timerMinutes * timerHours * timerDays;
-  // const end = new Date(new Date().getTime() + countdownTotal);
-
-  // let counter = 10;
-  // let newYearCountdown = setInterval(function(){
-  //   console.log(counter);
-  //   counter--
-  //   if (counter === 0) {
-  //     console.log("HAPPY NEW YEAR!!");
-  //     clearInterval(newYearCountdown);
-  //   }
-  // }, 1000);
-
-  // useEffect(() => {
-  //   let countdownInterval = null;
-  //
-  //   if (countdownTimerOn) {
-  //     countdownInterval = setInterval(() => {
-  //       setCountdownTime((prevTime) => prevTime + 10);
-  //     }, 10);
-  //   } else if (!countdownTimerOn) {
-  //     clearInterval(countdownInterval);
-  //   }
-  //
-  //   return () => clearInterval(countdownInterval);
-  // }, [countdownTimerOn]);
-
   return (
     <main style={{ padding: "1rem 0" }}>
       <p className="Timers">
-
-      {/*<p className="Timers">{timer}</p>Seconds Remaining*/}
-      <span>
-        {" "}
-        {("0" + Math.floor((timer / 60) % 60)).slice(-2)}
-      </span>
-      Minutes
-      <br />
-      <br />
-      <span>{("0" + Math.floor(timer % 60)).slice(-2)}</span>
-      Seconds
-      <br/>
+        {/*<p className="Timers">{timer}</p>Seconds Remaining*/}
+        <span> {("0" + Math.floor((timer / 60) % 60)).slice(-2)}</span>
+        Minutes
+        <br />
+        <br />
+        <span>{("0" + Math.floor(timer % 60)).slice(-2)}</span>
+        Seconds
+        <br />
       </p>
+      <button onClick={() => setCountdownTimerOn(true)}>Start</button>
+      <button onClick={() => setCountdownTimerOn(false)}>Stop</button>
       <input
         defaultValue={timer}
         onInput={(e) => setTimer(e.target.value)}
         type="number"
         step="1"
         min="0"
-        max="9999"
-      />{" "}
-      <button onClick={() => setCountdownTimerOn(true)}>Start</button>{" "}
-      <button onClick={() => setCountdownTimerOn(false)}>Stop</button>
+        max="111599"
+      />
     </main>
   );
 }

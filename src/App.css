@@ -25,7 +25,7 @@
 .Timers {
   width: 50vw;
   /*margin: 0 0;*/
-  display:grid;
+  display: grid;
   overflow: hidden;
   text-align: center;
 }
@@ -53,4 +53,16 @@ a.links:active {
   /*background-color: rgba(44, 22, 444, 40);*/
   background-color: rgba(219, 219, 219, 0.24);
   /*border-radius: 1em;*/
+}
+
+
+
+nav {
+  align-content: center;
+  border-bottom: solid 1px;
+  padding-bottom: 1rem;
+}
+
+nav a.active {
+  background-color: rgba(219, 219, 219, 0.24);
 }

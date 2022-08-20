@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 export default function Stopwatch() {
   // store and modify current stopwatch time
   const [stopwatchTime, setStopwatchTime] = useState(0);
+
   // toggle stopwatch running on or off
   const [stopwatchTimerOn, setStopwatchTimerOn] = useState(false);
 
