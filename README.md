@@ -20,6 +20,7 @@ I wanted to create a free minimalist stopwatch and countdown timer app that I co
 | HTML, CSS, JS 			| Languages     | 				  |
 | React	| Front-end			  |	JavaScript library for building user interfaces            |
 |react-router | Routing | Declarative routing for React apps at any scale|
+|react-toastify|UI Notifications| React-Toastify allows you to add notifications to your app with ease.|
 
 ## Project Specifications
 * Provide a countdown timer interface that handles minutes and seconds.
