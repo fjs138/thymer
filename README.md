@@ -25,6 +25,7 @@ I wanted to create a free minimalist stopwatch and countdown timer app that I co
 * Provide a countdown timer interface that handles minutes and seconds.
 * Provide a stopwatch interface that handles minutes and seconds.
 * Ability to start, stop, and reset each interface.
+* Pop-up notifying the user that the countdown timer is complete.
 
 ## Anatomy of Project
 
