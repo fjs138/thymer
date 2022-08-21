@@ -28,6 +28,11 @@ I wanted to create a free minimalist stopwatch and countdown timer app that I co
 * Ability to start, stop, and reset each interface.
 * Pop-up notifying the user that the countdown timer is complete.
 
+## To Be Completed
+* More graceful handling of maximum times on timer
+* Mitigate stopwatch count stoppage when tab becomes inactive
+* Revamp interface to fit hours in addition to minutes and seconds
+
 ## Anatomy of Project
 
 
