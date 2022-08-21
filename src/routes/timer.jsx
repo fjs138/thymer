@@ -53,7 +53,7 @@ export default function Timer() {
         type="number"
         step="1"
         min="0"
-        max="3600"
+        max="3599"
       />
       <ToastContainer position="top-center" />
     </main>
